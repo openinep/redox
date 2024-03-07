@@ -13,7 +13,7 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs; [ cabal-install ghc haskell-language-server ];
+          packages = with pkgs; [ cabal-install ghc haskell-language-server zlib ];
         };
       });
     };
